@@ -4,4 +4,5 @@ spring:
       192.168.99.100:9092
     consumer:
       group-id: someGroup
-
+server:
+  port: 8080

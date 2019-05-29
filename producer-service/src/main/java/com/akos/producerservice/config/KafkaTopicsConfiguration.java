@@ -1,4 +1,4 @@
-package com.akos.kafkalearning.config;
+package com.akos.producerservice.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.akos.kafkalearning.api;
+package com.akos.producerservice.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -19,7 +19,8 @@ public class ProducerController {
 
     @GetMapping
     public String get(){
-        kafkaTemplate.send("test4", "Hello!");
-        return "hello";
+        kafkaTemplate.send("test.topic", "Hello from ProducerController! (test.topic)");
+        kafkaTemplate.send("test.topic2", "Hello from ProducerController! (test.topic2)");
+        return "Producer";
     }
 }

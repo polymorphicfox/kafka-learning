@@ -1,13 +1,13 @@
-package com.akos.kafkalearning;
+package com.akos.producerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KafkaLearningApplication {
+public class ProducerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KafkaLearningApplication.class, args);
+        SpringApplication.run(ProducerServiceApplication.class, args);
     }
 
 }
